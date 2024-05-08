@@ -1,0 +1,40 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9f9;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.container h1{
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+    padding: 5px;
+    background-color: #f8f8f8;
+    border-bottom: 2px solid #ccc;
+}
+
+.position-relative {
+margin-right: 20px; 
+}
+
+.form-control {
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
