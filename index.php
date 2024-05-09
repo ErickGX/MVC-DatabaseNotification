@@ -18,6 +18,12 @@ switch ($url) {
      case '/notification-center':
             FormController::lerNotificacoes();
         break;
+     
+        case '/update-notification':
+            FormController::MarcarComoLida();
+            break;   
+
+
         
     default:
         echo  "<h1 style='font-size:100px;color: red;text-align: center;margin-top:90px;'>ERRO 404 ROTA NÃO ENCONTRADA <br> <br> </h1>";

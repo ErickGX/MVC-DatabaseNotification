@@ -17,7 +17,7 @@
 
 <body>
 
-<?php include "assets/navbar.php" ?>
+<?php include "assets/navbar-notification.php" ?>
     
 
 
@@ -30,8 +30,27 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
+
+    <!-- Script para capturar o id da lista com o click na notificacao-->
+<script>
+    $(document).ready(function() {
+  $('#notification-list').on('click', 'li', function(e) {
+    e.preventDefault(); // Previne o comportamento padrão do clique
+
+    var notificationId = $(this).data('id');
+
+    $.ajax({
+      url: '/update-notification/' + notificationId,
+      type: 'PUT',
+      success: function(response) {
+        // Atualiza a interface do usuário aqui após a notificação ser marcada como lida
+      }
+    });
+  });
+});
+</script>
 
 </body>
 

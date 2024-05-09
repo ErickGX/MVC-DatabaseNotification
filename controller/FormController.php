@@ -5,7 +5,7 @@
 class FormController
 {
 
-
+    //função que recebe os dados do formulario e cadastrar as notificacoes no banco de dados
     public static function cadastrarmsg()
     {
 
@@ -61,7 +61,8 @@ class FormController
 
 
 
-
+        //Lista todas as mensagems padroes ja cadastradas no banco de dados para inclusão como opção dentro do formulario
+        //para o uso como campo mensagem no momento de cadastrar uma nova notificação
     public static function listarMensagens()
     {
 
@@ -98,6 +99,9 @@ class FormController
     }
 
 
+
+    //lê todas as notificacoes cadastradas no banco de dados e retorna um array associativo
+    // para a view que criará dinamicamente a lista de notificalções;
     public static function lerNotificacoes()
     {
 
@@ -130,13 +134,23 @@ class FormController
             ];
         }
 
-        echo '<pre>', var_dump($arrayNormal), '</pre>';
+        //echo '<pre>', var_dump($arrayNormal), '</pre>';
 
         
 
         include 'views/notification_center.php';
 
     }
+
+    
+    public static function MarcarComoLida(){
+ 
+        var_dump($_POST);
+
+
+    }
+
+    
 
 
 }

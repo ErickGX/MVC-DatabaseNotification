@@ -76,17 +76,41 @@ class FormDAO {
         $notificacoes->setViaEncaminhamento($row['via_encaminhamento']);
       
         return $notificacoes;
+     }
 
 
 
-        
-        
+
+     /*  //Funcao para dar update nos campos read_At e no campo mensagem_vista atraves do ip capturado no controller
+     public function updateNotification(){
+        try {
+            $sql = 'SELECT * FROM notificacoes';
     
-        
+            $stmt = Connection::getConnection()->prepare($sql);
     
+            $stmt->execute();
     
-        
+            $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    
+            $list = array();
+    
+            foreach ($data as $row) {
+    
+                $list[] = $this->list($row);
+    
+            }
+    
+            return $list;
+    
+        } catch (Exception $e) {
+    
+            echo 'Erro ao listar notificacoes.<br>' . $e . '<br>';
+    
+        }
+    
     }
+*/
+
 
 
 
