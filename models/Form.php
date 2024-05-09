@@ -60,13 +60,18 @@
                 $this->created_at = $created_at;
             }
             public function setMensagemVista($mensagem_vista){
-                $this->mensagem_vista = $mensagem_vista;
+                $this->mensagem_vista = boolval($mensagem_vista);
             }
             public function setReadAt($read_at){
                 $this->read_at = $read_at;
             }
+               //todos os campos acimas sao preenchidos automaticamente pelo banco 
             public function setDestinatario($destinatario){
                 $this->destinatario = $destinatario;
+            }
+           
+            public function setTurma($turma){
+                $this->turma = $turma;
             }
             public function setAgendamentoEnvio($agendamento_envio){
                 $this->agendamento_envio = $agendamento_envio;
@@ -78,9 +83,7 @@
             public function setMensagem($mensagem){
                 $this->mensagem = $mensagem;
             }
-             public function setTurma($turma){
-                $this->turma = $turma;
-            }
+            
             public function setViaEncaminhamento($via_encaminhamento){
                 $this->via_encaminhamento = $via_encaminhamento;
             }

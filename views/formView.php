@@ -23,7 +23,7 @@
     <!-- Formulário -->
     <div class="container">
         <h1>Formulario para envio de avisos Senac</h1>
-        <form action="" method="post">
+        <form action="/cadastrar" method="post">
 
 
             <!-- Caixa de opções para Discente e Docente -->
@@ -60,7 +60,7 @@
                     <option value="" selected>Escolha uma opção</option>
                     <option value="instituicional">Institucional</option>
                     <option value="faltaProfessores">Falta de Professores</option>
-                    <option value="semAula">Amanhã não haverá Aula</option>
+                    <option value="sem aula">Amanhã não haverá Aula</option>
                 </select>
             </div>
 

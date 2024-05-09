@@ -12,7 +12,7 @@
         agendamento_envio DATE,
         categoria_aviso varchar(100) NOT NULL,
         mensagem varchar(250) NOT NULL,
-        turma varchar(50) NOT NULL,
+        turma varchar(50),
         via_encaminhamento varchar(30) NOT NULL
         
 
