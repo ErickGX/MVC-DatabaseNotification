@@ -19,9 +19,9 @@ switch ($url) {
             FormController::lerNotificacoes();
         break;
      
-        case '/update-notification':
+     case '/update-notification':
             FormController::MarcarComoLida();
-            break;   
+         break;   
 
 
         

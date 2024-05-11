@@ -27,4 +27,4 @@
 INSERT INTO mensagens_padrao (`texto_msg`) VALUES 
    ('Rematricula para o Segundo Semestre sera iniciada em 01/06/2024'),
    ('O Professor Raul de Matematica, por motivos pessoais nao podera comparecer a aula de Sexta Feira'),
-   ('Oficina de programacao WEB com PHP e Orientacao a Objetos sera realizada em 30/05/2 as 13:00:00');
+   ('Oficina de programacao WEB com PHP e Orientacao a Objetos sera realizada em 15/05/2024 as 08:15');

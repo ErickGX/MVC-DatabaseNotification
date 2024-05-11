@@ -13,6 +13,20 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+    <style>
+      li a {
+    text-decoration: none;
+    color: inherit;
+    
+    }
+
+    .dropdown-menu li a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+    </style>
+
 </head>
 
 <body>
@@ -34,26 +48,8 @@
 
 
     <!-- Script para capturar o id da lista com o click na notificacao-->
-<script>
-    $(document).ready(function() {
-  $('#notification-list').on('click', 'li', function(e) {
-    e.preventDefault(); // Previne o comportamento padrão do clique
-
-    var notificationId = $(this).data('id');
-
-    $.ajax({
-      url: '/update-notification/' + notificationId,
-      type: 'PUT',
-      success: function(response) {
-        // Atualiza a interface do usuário aqui após a notificação ser marcada como lida
-      }
-    });
-  });
-});
-</script>
 
 </body>
-
 
 
 </html>

@@ -7,16 +7,6 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Codigo do botao de sino com dropdown dinanimco aqui -->
-        <div class="position-relative">
-            <a href="#">
-                <i class="bi bi-bell-fill" style="font-size: 2rem;"></i>
-            </a>
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                99+
-                <span class="visually-hidden">unread messages</span>
-            </span>
-        </div>
-
-
+        
     </div>
 </nav>

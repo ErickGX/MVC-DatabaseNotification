@@ -132,8 +132,12 @@ class FormController
                 'turma' => $objeto->getTurma(),
                 'via_encaminhamento' => $objeto->getViaEncaminhamento()                
             ];
+
         }
 
+        $contadorDao = new FormDAO();
+        $numerador = $contadorDao->contador();
+        
         //echo '<pre>', var_dump($arrayNormal), '</pre>';
 
         
@@ -142,13 +146,40 @@ class FormController
 
     }
 
+
     
     public static function MarcarComoLida(){
+
+        include_once 'dao/FormDAO.php';
+        include_once 'models/Form.php';
+        include 'connection/Connection.php';
+
+        if(isset($_POST['id'])){
+
+            $id =  $_POST['id'];
+            date_default_timezone_set('America/Sao_Paulo');
+            $timestamp = date('d-m-Y H:i:s');
+
+        //echo '<pre>', var_dump($id), '</pre>';
+        //echo '<pre>', var_dump($timestamp), '</pre>';
+
+        $model = new Form;
+        $model->setId($id);
+        $model->setReadAt($timestamp);
+
+        $updateDao = new FormDAO();
+
+        $updateDao->updateNotificaction($model);
+
+
+        }
  
-        var_dump($_POST);
+         header('Location: /notification-center');
 
-
+        
     }
+
+
 
     
 
