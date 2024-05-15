@@ -23,7 +23,7 @@
 
     <!-- Formulário -->
     <div class="container">
-        <h1>Formulário para envio de notificações Senac </h1>
+        <h1>Formulário para envio de notificações</h1>
         <form action="/cadastrar" method="post">
 
 

@@ -3,16 +3,35 @@ body {
     background: linear-gradient(90deg, rgba(244,151,52,1) 9%, rgba(211,220,225,1) 49%, rgba(18,80,96,1) 83%); 
 }
 
-.container-fluid {
-    justify-content: space-around;
+
+/*
+
+body {
+    background: linear-gradient(271deg, #f49734, #d3dce1, #125060);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 26s ease infinite;
+    -moz-animation: AnimationName 26s ease infinite;
+    animation: AnimationName 26s ease infinite;
 }
 
-.navbar-brand.hover-effect:hover {
-    transform: scale(1.1);
-    transition: all 0.3s ease-in-out;
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
 }
 
-
+*/
 
 .container {
     max-width: 600px;

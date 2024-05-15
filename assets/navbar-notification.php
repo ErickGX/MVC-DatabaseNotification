@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-gradient">
     <div class="container-fluid">
         <a class="navbar-brand" href="/">Comunica Senac</a>
         <a class="navbar-brand" href="/notification-center">Centro de notificação</a>
