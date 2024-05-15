@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="assets/style.css">
 
+
     <!-- Inclua o CSS do Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -22,7 +23,7 @@
 
     <!-- Formulário -->
     <div class="container">
-        <h1>Formulario para envio de avisos Senac</h1>
+        <h1>Formulário para envio de notificações Senac </h1>
         <form action="/cadastrar" method="post">
 
 
@@ -60,7 +61,7 @@
                     <option value="" selected>Escolha uma opção</option>
                     <option value="instituicional">Institucional</option>
                     <option value="faltaProfessores">Falta de Professores</option>
-                    <option value="sem aula">Amanhã não haverá Aula</option>
+                    <option value="sem aula">Não haverá aula</option>
                 </select>
             </div>
 
@@ -70,7 +71,7 @@
                 <select class="form-select" id="messageTypeSelect">
                     <option selected default value="">Escolha uma opção</option>
                     <option value="manual">Manual</option>
-                    <option value="predefinida">Predefinida</option>
+                    <option value="predefinida">Mensagens Pré-definidas</option>
                 </select>
             </div>
 
@@ -83,7 +84,7 @@
 
             <!-- Campo para a mensagem predefinida -->
             <div class="mb-3" id="predefinedMessageDiv">
-                <label for="predefinedMessageSelect" class="form-label">Mensagem predefinida</label>
+                <label for="predefinedMessageSelect" class="form-label">Mensagens Pré-definidas</label>
                 <!-- As mensagens predefinidas serão carregadas aqui dinamicamente com JavaScript/jQuery -->
                 <select name="predefinida" class="form-select" id="predefinedMessageSelect">
                     <?php foreach ($mensagens as $mensagem): ?>
@@ -97,7 +98,7 @@
                 <input class="form-check-input" type="checkbox" name="encaminhamento" value="Site" id="defaultCheck1"
                     checked>
                 <label class="form-check-label" for="defaultCheck1">
-                    Via de Encaminhamento: Site
+                    Via de Encaminhamento: BlackBoard
                 </label>
             </div>
 
@@ -121,9 +122,7 @@
 
 
     <!-- Inclua o JavaScript do Bootstrap 5 e o jQuery -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"ntegrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 
 
@@ -183,45 +182,7 @@
         });
 
     </script>
-    <!--
-@section('scripts')
-<script>
-$(document).ready(function() {
-    // Substitua isso pela chamada AJAX para buscar as notificações do backend
-    var notifications = [
-        { text: 'Primeiro aviso', read: false },
-        { text: 'Segundo aviso', read: true },
-        { text: 'Terceiro aviso', read: false }
-    ];
 
-    // Atualiza a lista de notificações e o contador de mensagens não lidas
-    function updateNotifications() {
-        $('#notificationList').empty();
-        var unreadCount = 0;
-
-        notifications.forEach(function(notification, index) {
-            var listItem = $('<li>');
-            var itemLink = $('<a>').addClass('dropdown-item').text(notification.text);
-            listItem.append(itemLink);
-
-            if (!notification.read) {
-                itemLink.addClass('bg-warning');
-                unreadCount++;
-            }
-
-            $('#notificationList').append(listItem);
-        });
-
-        $('#unreadCount').text(unreadCount);
-    }
-
-    // Chama a função para atualizar as notificações quando a página é carregada
-    updateNoti1111fications();
-});
-</script>
-@endsection
-
--->
 
 </body>
 

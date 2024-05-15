@@ -1,3 +1,19 @@
+body {
+    background: rgb(244,151,52);
+    background: linear-gradient(90deg, rgba(244,151,52,1) 9%, rgba(211,220,225,1) 49%, rgba(18,80,96,1) 83%); 
+}
+
+.container-fluid {
+    justify-content: space-around;
+}
+
+.navbar-brand.hover-effect:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+
+
 .container {
     max-width: 600px;
     margin: 0 auto;

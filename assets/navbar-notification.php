@@ -10,7 +10,7 @@
         <div class="dropdown">
             <a href="#" class="dropdown-toggle" id="notificationDropdown" data-bs-toggle="dropdown">
                 <i class="bi bi-bell-fill" style="font-size: 2rem;"></i>
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                <span class="position-absolute top-0 start-70 translate-middle badge rounded-pill bg-danger">
                   <?php echo($numerador); ?>
                     <span class="visually-hidden">unread messages</span>
                 </span>
